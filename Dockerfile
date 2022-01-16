@@ -1,9 +1,9 @@
 FROM sandy1709/catuserbot:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/MACS-AR/MACS.git /tree/master/userbot
+RUN git clone https://github.com/MACS-AR/MACS.git /root/userbot
 #working directory 
-WORKDIR /tree/master/userbot
+WORKDIR /root/userbot
 
 # Install requirements
 RUN pip3 install --no-cache-dir requirements.txt
